@@ -1,6 +1,6 @@
 # ⚙️ Smart Fault Diagnosis System
 
-AI-powered industrial fault detection using **Groq API** (free & fast) + **Streamlit**.
+AI-powered industrial fault detection using **Groq
 
 ---
 

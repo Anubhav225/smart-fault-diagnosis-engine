@@ -1,0 +1,35 @@
+=== CNC MACHINING CENTER MC-500 ERROR LOG ===
+Asset ID: CNC-MILL-003
+Log Period: 2024-01-15 06:00 to 2024-01-15 18:00
+
+[06:12:34] INFO  Spindle start OK. Speed: 8000 RPM
+[06:45:01] INFO  Tool change: Position 4 -> Position 7
+[07:23:55] WARN  Spindle load exceeded threshold: 92% (limit 85%)
+[07:24:10] WARN  Spindle load: 94%
+[07:25:33] ERROR Spindle motor overcurrent fault. Current: 28.4A (limit 25A). E-Code: E0031
+[07:25:33] INFO  Auto-stop triggered. Spindle halted.
+[07:30:12] INFO  Fault cleared by operator. Resume production.
+[08:14:20] WARN  X-axis servo following error: 0.045mm (limit 0.030mm)
+[08:15:45] WARN  X-axis servo following error: 0.051mm - degrading
+[09:00:00] INFO  Scheduled lubrication cycle started
+[09:00:45] WARN  Lube pressure low: 1.8bar (nominal 2.5bar)
+[09:01:00] ERROR Lubrication system failure. Pump no-flow detected. E-Code: L0012
+[09:01:00] ALARM Production halted - safety interlock active
+[10:30:00] INFO  Maintenance team notified. Lube pump inspection started.
+[11:15:22] INFO  Lube pump motor replaced. System primed.
+[11:20:00] INFO  Production resumed.
+[12:00:00] INFO  Mid-shift inspection: All systems nominal
+[13:45:10] WARN  Coolant temperature high: 42C (limit 38C)
+[13:46:00] WARN  Coolant temperature: 45C - rising
+[13:50:00] ERROR Coolant system overheat. Chiller fault. E-Code: C0021
+[13:50:00] INFO  Reduced feed rate to 60% to manage heat
+[14:30:00] INFO  Chiller refrigerant topped up. Temperature normal: 36C
+[15:00:00] INFO  Spindle vibration check: 1.8 mm/s (limit 4.5 mm/s) - OK
+[16:55:00] WARN  Tool wear index: 87% (replace at 100%)
+[17:50:00] INFO  End of shift. Parts produced: 143. Rejects: 4 (2.8%)
+
+=== FAULT SUMMARY ===
+Total errors  : 4
+Total warnings: 8
+Downtime      : 3h 45min
+OEE           : 68.7%
